@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xl.chatandroid.Main2Activity">
+   <android.support.design.widget.CoordinatorLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp">
+
+           <ImageView
+               android:layout_width="278dp"
+               android:layout_height="167dp"
+               android:src="@drawable/chat" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Nombre:" />
+
+           <EditText
+               android:id="@+id/txtname"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="your Name"
+               android:text="android" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Host:" />
+           <EditText
+               android:id="@+id/txthost"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="your Host"
+               android:text="http://192.168.137.1:80" />
+           <Button
+               android:id="@+id/btnIngresar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#ffff"
+               android:text="Ingresar" />
+       </LinearLayout>
+   </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
